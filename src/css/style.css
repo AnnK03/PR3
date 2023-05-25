@@ -1,0 +1,187 @@
+.title {
+  font-size: 30px; }
+
+.figures__list {
+  display: flex;
+  align-items: center; }
+.figures__item {
+  margin-right: 30px; }
+
+.square {
+  height: 40px;
+  width: 40px;
+  background: #9370DB; }
+
+.circle {
+  height: 40px;
+  width: 40px;
+  background: #9370DB;
+  border-radius: 50%; }
+
+.oval {
+  height: 60px;
+  width: 40px;
+  background: #9370DB;
+  border-radius: 50%; }
+
+.rhombus {
+  height: 40px;
+  width: 40px;
+  background: #9370DB;
+  transform: rotate(135deg); }
+
+.figures__list--2 {
+  position: relative; }
+
+.figures__list--2 .square {
+  position: absolute;
+  background: #5F9EA0;
+  top: 0;
+  left: 0;
+  z-index: -10; }
+
+.figures__list--3 .circle {
+  width: 500px;
+  color: #fff;
+  text-align: center; }
+
+.img__list {
+  display: flex;
+  align-items: center;
+  margin-top: 30px; }
+
+.img__border {
+  width: 200px;
+  height: 300px;
+  border: 3px solid #5F9EA0; }
+
+.img__border img {
+  width: 100%;
+  height: 100%; }
+
+.img__item {
+  width: 200px;
+  height: 300px;
+  margin-right: 30px; }
+
+.img__item img {
+  width: 100%;
+  height: 100%; }
+
+.gradients__list {
+  display: flex;
+  align-items: center;
+  margin-top: 30px; }
+
+.gradients__item {
+  margin-right: 30px;
+  width: 100px;
+  height: 100px; }
+
+.gradients__item--1 {
+  background: linear-gradient(#9370DB, darkblue); }
+
+.gradients__item--2 {
+  background: linear-gradient(to right, #9370DB, darkblue); }
+
+.gradients__item--3 {
+  background: linear-gradient(to bottom right, #9370DB, darkblue); }
+
+@keyframes circle-square {
+  from {
+    width: 40px;
+    height: 40px;
+    background-color: #F495AD; }
+  to {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #233AFF; } }
+.animation__item {
+  width: 40px;
+  height: 40px;
+  margin-top: 30px;
+  background-color: #F495AD;
+  animation-name: circle-square;
+  animation-duration: 5s;
+  animation-iteration-count: infinite; }
+
+.pulse {
+  animation: pulse 2.5s linear infinite; }
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.6);
+    opacity: 0; }
+  50% {
+    opacity: 1;
+    transform: scale(1); }
+  100% {
+    transform: scale(0.6);
+    opacity: 0; } }
+.add__btns {
+  margin: 20px 0; }
+
+.add__btns button {
+  margin: 10px; }
+
+.modal-wrapper {
+  display: none;
+  background: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  z-index: 1; }
+
+.modal-active {
+  position: absolute;
+  width: 350px;
+  height: 370px;
+  top: calc(50% - 250px);
+  left: calc(50% - 150px);
+  border-radius: 10px;
+  background-color: white;
+  cursor: default;
+  padding: 40px 20px; }
+
+.modal-close {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer; }
+
+.modal-close img {
+  margin: 3px;
+  width: 24px;
+  height: 24px; }
+
+.modal-window {
+  position: relative; }
+
+.slider {
+  width: 300px;
+  height: 300px;
+  margin: 20px auto;
+  overflow: hidden; }
+
+.slider-line {
+  width: 1024px;
+  height: 300px;
+  display: flex;
+  position: relative;
+  left: 0;
+  transition: all ease 1s; }
+
+.slider-line img {
+  width: 300px;
+  height: 300px; }
+
+.btn-modal {
+  margin-bottom: 30px; }
+
+/*# sourceMappingURL=style.css.map */
